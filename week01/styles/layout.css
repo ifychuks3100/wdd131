@@ -23,13 +23,13 @@ nav{
     background-color: black;
     padding: 1rem;
     margin: 0;
-    /* height: 100%; */
     
     
 }
 a{
     color: white;
     text-decoration: none;
+
 }
 footer{
     grid-column: 1/3;
