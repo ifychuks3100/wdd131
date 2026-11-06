@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Serif", serif;
+    max-width: 50rem;
+    place-self: center;
+    
+}
+header{
+    background-color: rgb(66, 7, 66);
+    color: white;
+    height: fit-content;
+    padding: 1rem;
+    
+}
+header span{
+    font-size: 30px;
+    margin: 0;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#menu{
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: large;
+}
+
+#menu::before{
+    content: "☰";
+    
+}
+
+#menu.show::before{
+    content: "X";
+}
+.navigation.show{
+    display: block;
+    place-items: center;
+    height: 100%;
+
+    font-size: 20px;
+    /* border: 2px solid white; */
+    
+    
+}
+ul{
+    /* border: 2px solid white; */
+    width: 100%;
+    height:auto;
+    
+}
+
+li{
+    /* border: 2px solid white; */
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    
+}
+
+.navigation li:hover{
+    background-color: wheat;
+    color: black;
+    /* width: 500px; */
+    /* border: 2px solid white; */
+}
+
+.navigation {
+    display: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0rem 0;
+    border: 1px solid black;
+    place-items: center;
+    padding: 1rem;
+}
+
+h1{
+    place-self: center;
+    margin: .5rem
+}
+
+main figure{
+    margin: 0;
+    place-items: center;
+}
+
+footer{
+        
+    margin: 0;
+    padding: 1rem;
+    background-color: rgb(66, 7, 66);
+    color: white;
+    font-size: 1rem;
+
+}
+
+#lastModifiedText{
+    text-align: center;
+    color: gold;
+}
