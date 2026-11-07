@@ -21,9 +21,10 @@
 
     }
 
-    .navigation{
+    nav{
         display: flex;
         width: 48%;
+        margin-right: 2rem;
     }
 
     main{

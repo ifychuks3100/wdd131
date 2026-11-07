@@ -38,37 +38,35 @@ header span{
 #menu.show::before{
     content: "X";
 }
-.navigation.show{
+nav.show{
     display: flex;
     flex-direction: column;
     width: 100%;
     place-items: center;
     height: 100%;
     font-size: 20px;
+
 }
 a{
 
     width: 100%;
     height:auto;
     text-align: center;
-    width: 100%;
     padding: 1rem;
+    color: white;
+    text-decoration: none;
     
 }
 
 
-.navigation a:hover{
+nav a:hover{
     background-color: rgb(104, 86, 52);
     color: rgb(251, 249, 249);
 
 }
 
-.navigation {
+nav {
     display: none;
-}
-a{
-    color: white;
-    text-decoration: none;
 }
 
 main{
