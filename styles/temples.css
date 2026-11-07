@@ -11,6 +11,9 @@ body {
     
 }
 header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: rgb(66, 7, 66);
     color: white;
     height: fit-content;
@@ -21,13 +24,6 @@ header span{
     font-size: 30px;
     margin: 0;
 }
-
-header div{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
 #menu{
     width: 2.5rem;
     height: 2.5rem;
@@ -43,35 +39,28 @@ header div{
     content: "X";
 }
 .navigation.show{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     place-items: center;
     height: 100%;
-
     font-size: 20px;
-    /* border: 2px solid white; */
-    
-    
 }
-ul{
-    /* border: 2px solid white; */
+a{
+
     width: 100%;
     height:auto;
-    
-}
-
-li{
-    /* border: 2px solid white; */
     text-align: center;
     width: 100%;
     padding: 1rem;
     
 }
 
-.navigation li:hover{
-    background-color: wheat;
-    color: black;
-    /* width: 500px; */
-    /* border: 2px solid white; */
+
+.navigation a:hover{
+    background-color: rgb(104, 86, 52);
+    color: rgb(251, 249, 249);
+
 }
 
 .navigation {
@@ -81,10 +70,6 @@ a{
     color: white;
     text-decoration: none;
 }
-ul{
-    list-style: none;
-}
-
 
 main{
     display: grid;
@@ -104,6 +89,11 @@ h1{
 main figure{
     margin: 0;
     place-items: center;
+}
+figure img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 footer{

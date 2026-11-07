@@ -10,34 +10,22 @@
         display: flex;
         gap: 10%;
         font-size: 20px;
-        place-items: center;
+        justify-content: space-between;
         padding-left: 2rem;
-    }
-  
-    header div{
-        width: 100%;
-        /* border: 2px solid white; */
+        place-items: center;
     }
 
-    header div #menu{
+
+    header #menu{
         display: none;
-        width: 10px;
 
     }
 
     .navigation{
-        display: block;
-        width: 100%;
-        place-self: center;
-    }
-    ul{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 5vh;
-        /* border: 2px solid white; */
-        height: 100%;
+        width: 48%;
     }
+
     main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
