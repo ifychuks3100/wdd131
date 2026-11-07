@@ -81,7 +81,8 @@ main{
 
 h1{
     place-self: center;
-    margin: .5rem
+    margin: .5rem;
+    font-weight: 700;
 }
 
 main figure{
