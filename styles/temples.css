@@ -71,12 +71,13 @@ nav {
 
 main{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 2rem;
-    margin: 0rem 0;
-    border: 1px solid black;
+    margin: 0;
+    /* border: 1px solid black; */
     place-items: center;
     padding: 1rem;
+    width: 100%;
 }
 
 h1{
@@ -85,14 +86,17 @@ h1{
     font-weight: 700;
 }
 
-main figure{
+main figure {
     margin: 0;
+    width: 100%;
+    min-width: 0;
     place-items: center;
 }
-figure img{
-    width: 100%;
-    height: auto;
+figure img {
     display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 footer{
