@@ -1,0 +1,91 @@
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Roboto Serif", serif;
+    max-width: 50rem;
+    place-self: center;
+}
+h1{
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    border-bottom: 2rem solid green;
+    margin: 0;
+    color: white;
+    background-color: rgb(66, 7, 66);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.data, .weather {
+    text-align: center;
+    padding: 1rem;
+    border-top: 1px solid black;
+    line-height: 1;
+}
+@media (max-width: 600px) {
+    .desktop-icon{
+        display:none
+    }
+}
+
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+    gap: 10px;
+    margin: 1rem 2rem;
+}
+
+.info p:first-child {
+    text-align: right;
+}
+
+.info p:last-child {
+    text-align: left;
+}
+
+
+.weather img {
+    width: 30vw;
+    height: auto;
+    margin: 1rem;
+    place-self: center;
+}
+footer{
+        
+    margin: 0;
+    padding: 2.2rem;
+    background-color: rgb(66, 7, 66);
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+#lastModifiedText{
+    text-align: center;
+    color: gold;
+    margin: 1rem;
+}

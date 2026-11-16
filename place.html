@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples | WDD 131</title>
+    <meta name="description" content="This is a sample HTML document that contains temple images.">
+    <meta name="author" content="Ifeanyichukwu Chukuji">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+       
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="images/tigre.webp">
+                <source media="(min-width: 601px)" srcset="images/nigeria.webp">
+
+                <img src="images/tigre.webp" alt="A tiger">
+            </picture>
+            <section class="data">
+                <h2>Data</h2>
+
+                <div class="info">
+                    <p><strong>Area:</strong></p>
+                    <p>923,768 sq km</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Population:</strong></p>
+                    <p>237,500,000</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Capital:</strong></p>
+                    <p>Abuja</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Languages:</strong></p>
+                    <p>English</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Currency:</strong></p>
+                    <p>Naira</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Time Zone:</strong></p>
+                    <p>UTC+1</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Calling Code:</strong></p>
+                    <p>+234</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Internet TLD:</strong></p>
+                    <p>.ng</p>
+                </div>
+            </section>
+
+            <section class="weather">
+                <div class="weather-heading">
+                    <h2>Weather</h2>
+
+                    <img src="images/partly-cloudy.svg" alt="Weather icon">
+                    <span class="desktop-icon">🌤️</span>
+                </div>
+                
+
+                <div class="info">
+                    <p><strong>Temperature:</strong></p>
+                    <p>10°C</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Conditions:</strong></p>
+                    <p>Partly Cloudy</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Wind:</strong></p>
+                    <p>5 km/h</p>
+                </div>
+
+                <div class="info">
+                    <p><strong>Wind Chill:</strong></p>
+                    <p>9.8°C</p>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Ifeanyichukwu Chukuji | Lagos, Nigeria. </p>
+        
+        <p id="lastModifiedText">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>
