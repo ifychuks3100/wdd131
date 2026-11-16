@@ -1,4 +1,7 @@
-
+:root{
+    --primary-color:rgb(66, 7, 66);
+    --secondary-color1: green;
+}
 
 * {
 	margin: 0;
@@ -15,10 +18,10 @@ h1{
     text-align: center;
     font-size: 2rem;
     padding: 2rem;
-    border-bottom: 2rem solid green;
+    border-bottom: 2rem solid var(--secondary-color1);
     margin: 0;
     color: white;
-    background-color: rgb(66, 7, 66);
+    background-color: var(--primary-color);
 }
 
 img{
@@ -34,11 +37,6 @@ img{
     border-top: 1px solid black;
     line-height: 1;
 }
-@media (max-width: 600px) {
-    .desktop-icon{
-        display:none
-    }
-}
 
 h2{
     font-size: 2rem;
@@ -53,7 +51,6 @@ p{
     justify-content: center;
     align-items: center;
     max-width: 300px;
-    margin: 0 auto;
     gap: 10px;
     margin: 1rem 2rem;
 }
@@ -77,7 +74,7 @@ footer{
         
     margin: 0;
     padding: 2.2rem;
-    background-color: rgb(66, 7, 66);
+    background-color: var(--primary-color);
     color: white;
     font-size: 1rem;
     text-align: center;

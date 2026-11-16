@@ -1,5 +1,10 @@
 @media (min-width: 601px) {
 
+    :root{
+        --secondary-color2: rgba(0, 128, 0, 0.751);
+        --secondary-color3: rgba(128, 128, 128, 0.717);
+    }
+
     body{
         max-width: 2400px;;
         width: 100%;
@@ -21,7 +26,7 @@
     .data, .weather{
         position: absolute;
         border-top: 0;
-        background-color: rgba(128, 128, 128, 0.717);
+        background-color: var(--secondary-color3);
         box-shadow: 0 0px 20px 0px;
         
     }
@@ -44,14 +49,8 @@
     .weather img{
         display: none;
     }
-
-    .display-icon{
-        display: show;
-        
-
-    }
     .data h2{
-        background-color: rgba(0, 128, 0, 0.751);
+        background-color: var(--secondary-color2);
         width: 90%;
         padding: 1rem;
         height: 14vh;
@@ -64,14 +63,17 @@
     .weather-heading{
         display: flex;
         place-items: center;
-        background-color: rgba(0, 128, 0, 0.751);
+        background-color: var(--secondary-color2);
         width: 90%;
-        padding: 1rem;
+        padding: 1rem 2rem;
         height: 14vh;
         top: 1rem;
         left: -1rem;
         position: absolute;
         color: white;
+    }
+    .weather-heading h2::after{
+        content: "🌤️";
     }
 
     footer p{
