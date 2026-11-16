@@ -68,7 +68,7 @@ p{
     width: 30vw;
     height: auto;
     margin: 1rem;
-    place-self: center;
+    justify-self: center;
 }
 footer{
         
