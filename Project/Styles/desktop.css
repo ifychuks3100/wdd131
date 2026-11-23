@@ -1,0 +1,386 @@
+/* =========================
+   CSS VARIABLES
+========================= */
+
+:root {
+    --primary-color: #202820;
+    --secondary-color: #d6a84f;
+    --background-color: #f7f5ef;
+    --card-color: #ffffff;
+    --text-color: #292929;
+    --light-text: #777777;
+    --border-color: #e5e2d9;
+}
+
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* =========================
+   HEADER AND NAVIGATION
+========================= */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* =========================
+   HOME PAGE HERO
+========================= */
+
+.hero {
+    min-height: 480px;
+
+    background:
+        linear-gradient(rgba(20, 28, 22, 0.82), rgba(20, 28, 22, 0.82)),
+        url('../images/chess-board.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h2 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #e5e5e5;
+}
+
+.button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.introduction {
+    text-align: center;
+    max-width: 850px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.introduction h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.introduction p {
+    color: var(--light-text);
+    font-size: 17px;
+}
+
+
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.features {
+    padding: 50px 8% 80px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+    color: var(--primary-color);
+}
+
+.feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    background-color: var(--card-color);
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: var(--light-text);
+    margin-bottom: 20px;
+}
+
+.feature-card a {
+    color: #a77b28;
+    font-weight: bold;
+}
+
+
+/* =========================
+   OTHER PAGE HEADINGS
+========================= */
+
+.page-heading {
+    text-align: center;
+    padding: 65px 20px;
+    background-color: #eae6d9;
+}
+
+.page-heading h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.page-heading p {
+    color: var(--light-text);
+    max-width: 650px;
+    margin: auto;
+}
+
+
+/* =========================
+   CHESS PIECES
+========================= */
+
+.pieces-container {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.piece-card {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: 0.3s ease;
+}
+
+.piece-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.piece-card h3 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.piece-card p {
+    color: var(--light-text);
+    margin-bottom: 15px;
+}
+
+.piece-card strong {
+    color: var(--primary-color);
+}
+
+
+/* =========================
+   CHESS STRATEGIES
+========================= */
+
+.strategies-container {
+    padding: 60px 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.strategy-card {
+    background-color: var(--card-color);
+    padding: 30px;
+    border-left: 5px solid var(--secondary-color);
+    border-radius: 7px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.strategy-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.strategy-card p {
+    color: var(--light-text);
+}
+
+
+/* =========================
+   QUIZ SECTION
+========================= */
+
+.quiz-section {
+    background-color: #eae6d9;
+    padding: 60px 8%;
+}
+
+.quiz-section h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.quiz-section > p {
+    text-align: center;
+    color: var(--light-text);
+    margin-bottom: 35px;
+}
+
+#chess-quiz {
+    max-width: 750px;
+    margin: auto;
+}
+
+.question {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--light-text);
+    cursor: pointer;
+}
+
+.question input {
+    margin-right: 8px;
+    accent-color: var(--primary-color);
+}
+
+#chess-quiz button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#chess-quiz button:hover {
+    background-color: #39483a;
+}
+
+#quiz-result {
+    max-width: 750px;
+    margin: 25px auto 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #d4d4d4;
+}
