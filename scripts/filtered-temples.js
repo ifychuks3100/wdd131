@@ -153,8 +153,8 @@ function displayTemples(templeList) {
     templesContainer.innerHTML = "";
 
     // Loop through the temples
-    templeList.forEach((temple) => {
-
+    templeList.forEach((temple, index) => {
+        
         // Create card
         const card = document.createElement("section");
         card.classList.add("temple-card");
@@ -175,11 +175,26 @@ function displayTemples(templeList) {
         const area = document.createElement("p");
         area.textContent = `Size: ${temple.area.toLocaleString()} sq ft`;
 
+
         // Temple image
         const image = document.createElement("img");
+
         image.src = temple.imageUrl;
         image.alt = temple.templeName;
-        image.loading = "lazy";
+        image.decoding = "async";
+
+        // First image loads immediately
+        if (index === 0) {
+            image.loading = "eager";
+            image.fetchPriority = "high";
+        } else {
+            image.loading = "lazy";
+        }
+
+        // Set image dimensions
+        image.width = 400;
+        image.height = 250;
+
 
         // Add elements to card
         card.appendChild(name);
