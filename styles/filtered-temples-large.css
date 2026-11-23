@@ -1,0 +1,54 @@
+/* TABLET VIEW */
+
+@media screen and (min-width: 700px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header span {
+        font-size: 30px;
+    }
+
+    header #menu {
+        display: none;
+    }
+
+    nav.navigation {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+        margin-right: 1rem;
+    }
+
+    nav a {
+        padding: 1rem;
+        font-size: 18px;
+    }
+
+    .temples-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .temple-card {
+        max-width: 350px;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* DESKTOP VIEW */
+
+@media screen and (min-width: 1000px) {
+
+    .temples-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+}
